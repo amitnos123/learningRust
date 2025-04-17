@@ -17,7 +17,7 @@ where
     }
 
     pub fn set_value(&mut self, value : usize) {
-        self.value = value
+        self.value = value;
 
         let percentage_of_max = self.value as f64 / self.max as f64;
 

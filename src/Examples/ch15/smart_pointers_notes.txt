@@ -12,6 +12,9 @@ This type keeps track of the number of references to a value
 to determine whether or not the value is still in use.
 We use when we want to use a value in multiple places, and without need to pass the ownership betweenthem
 
+When we don't want ownership, we can use Weak.
+Weak is a version of Rc that holds non-owning reference to the managed allocation.
+
 
 RefCell<T>
 ----------
