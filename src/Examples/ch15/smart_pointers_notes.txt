@@ -15,6 +15,8 @@ We use when we want to use a value in multiple places, and without need to pass 
 When we don't want ownership, we can use Weak.
 Weak is a version of Rc that holds non-owning reference to the managed allocation.
 
+Weak.upgrade() to turn Weak type to Rc type
+Rc.downgrade() to turn Rc type to Weak type
 
 RefCell<T>
 ----------
