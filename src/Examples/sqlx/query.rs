@@ -98,7 +98,7 @@ fn insert_book(book: &Book, pool: &sqlx::PgPool) -> Result<(), Box<dyn Error>> {
     let mut txn = conn.begin().await?;
 
     let author_q = r"
-        INSERT INTOP author (name) VALUES ($1) RETURNING id
+        INSERT INTO author (name) VALUES ($1) RETURNING id
     ";
 
     let book_q = r"
